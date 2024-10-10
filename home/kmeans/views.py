@@ -76,8 +76,8 @@ def output(request):
         a=request.POST["rooms"]
         b=request.POST["bathrooms"]
         c=request.POST["size"]
-    #url = 'D:\\HELL\\New\\data.csv'
-    url = 'D:\\home\\data.csv'
+    
+    url = default_storage.path("data.csv")
     #url=UploadFileForm.file
 
     df2 = pd.read_csv(url)
