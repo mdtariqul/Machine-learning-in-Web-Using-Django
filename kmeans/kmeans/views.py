@@ -46,10 +46,10 @@ def output(request):
     import matplotlib.pyplot as plt
     data=''
 
-    from numpy.lib.function_base import append
+    #from numpy.lib.function_base import append
     from mpl_toolkits.mplot3d import Axes3D
 
-    url = 'D:\HELL\kmeans\data.csv'
+    url = default_storage.path("data.csv")
     #url=UploadFileForm.file
 
     df2 = pd.read_csv(url)
